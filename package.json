@@ -1,12 +1,13 @@
 {
   "name": "demo-project",
   "version": "1.0.0",
-  "description": "Example showing direct and transitive dependencies",
+  "description": "Example showing express (direct), debug/ms (transitive), and sha.js (transitive via browserify-sign)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "browserify-sign": "^4.2.2"
   }
 }
