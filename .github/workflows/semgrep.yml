@@ -22,5 +22,12 @@ jobs:
     container:
       image: semgrep/semgrep
     steps:
-    - uses: actions/checkout@v4
-    - run: semgrep ci
+      - uses: actions/checkout@v4
+
+      - name: Install Node.js and npm
+        run: |
+          apk add --no-cache nodejs npm
+          npm install
+
+      - name: Run Semgrep
+        run: semgrep ci --supply-chain
