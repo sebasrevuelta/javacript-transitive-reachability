@@ -30,4 +30,4 @@ jobs:
           npm install
 
       - name: Run Semgrep
-        run: semgrep ci --supply-chain --exclude=package-lock.json
+        run: semgrep ci --supply-chain --allow-local-builds --exclude=package-lock.json
