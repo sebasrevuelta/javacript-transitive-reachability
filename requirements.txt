@@ -1,0 +1,5 @@
+# Example requirements.txt including a GPL-3.0 compatible library
+
+requests==2.32.3       # Apache-2.0 license (permissive)
+numpy==1.26.4          # BSD-3-Clause license
+PyGObject==3.48.2      # LGPL-3.0 (GPL-3.0 compatible)
